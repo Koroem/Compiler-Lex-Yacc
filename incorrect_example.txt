@@ -1,0 +1,39 @@
+variables{
+int x = 23;
+int x1;
+int x2;
+float f1 = 50.0;
+string s = "ana";
+}end_variables
+functions{
+function int testFunction(int x, float z) {
+  int a1=5;
+}
+
+function int testFunction(int x, float z) {
+  int a2=6;
+}
+
+function int testFunction(float x, float z) {
+  int a3=7;
+}
+
+function int test(int param) {
+ int a4=8;
+}
+
+}end_functions
+
+program{
+            x3 = x + 2;
+	f1 = x + x2;
+	f1 = test (5) + x;
+x = test(5) + f1; 
+	x = s + f1;
+            test(f1);
+	test(5,f1);
+	TypeOf(f1+x);
+Eval(f1);
+Eval(f1+x);
+	test(5+f1);
+}end_program
